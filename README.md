@@ -7,7 +7,8 @@ El objetivo del desafío es construir un componente responsive usando **HTML y C
 
 ## 🚀 Demo
 
-🔗 **Live Preview (GitHub Pages)**  
+🔗 **Live Preview https://juan124perdomo.github.io/results-summary-component-main.io/
+
 
 
 ---
@@ -32,5 +33,5 @@ El diseño está optimizado para dispositivos móviles y pantallas grandes.
 
 ---
 
-## 📂 Estructura del proyecto
+
 
