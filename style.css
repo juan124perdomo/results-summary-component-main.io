@@ -198,6 +198,10 @@ body{
         padding: 30px 20px;
         z-index: 3;
     }
+    .score_circle{
+        width: 130px;
+        height: 130px;
+    }
     .summary{
         width: 100%;
         position: relative;
@@ -212,7 +216,7 @@ body{
 @media screen and (min-width: 800px) {
     .container{
         max-width: 600px;
-    
+        height: 400px;
         margin: 100px auto;
         justify-content: center;
         align-items: center;
@@ -238,7 +242,8 @@ body{
         height: 100%;
         border-radius:15px ;
         padding: 0px 20px;
-        background: none;
+        justify-content: center;
+        
     }
     .summary h4 {
         margin-top: 20px;
