@@ -1,0 +1,227 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Hanken Grotesk", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    
+}
+
+/*Your result section*/
+.your_result{
+    color: white;
+    background:linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding: 10px 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius:  0  0 15px 15px;
+}
+
+.your_result h4{
+    font-size: 13px;
+    font-weight: 500;
+    opacity: 0.75;
+}
+.your_result h2{
+    font-size: 20px;
+}
+.your_result p{
+    font-size: 12px;
+    width: 80%;
+    opacity: 0.75;
+    margin-bottom: 20px;
+    
+}
+
+/*Seccion  del circulo*/
+.score_circle{
+    border-radius: 100%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    width: 110px;
+    height: 110px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.score_number{
+    font-weight: 700;
+    font-size: 45px;
+    padding: 0;
+    position: relative;
+    top: 5px;
+}
+
+.score_total{
+    font-size: 0.9rem;
+    color: hsla(0, 0%, 100%, 0.459);
+    position: relative;
+    top: -5px;
+}
+
+/*Summary section*/
+.summary{
+    background: hsl(0, 0%, 100%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.summary-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.category-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+/* Reaction section background color*/
+.reaction-container{
+    background-color: hsla(0, 100%, 67%, 0.062);
+}
+.memory-container{
+    background-color: hsla(39, 100%, 56%, 0.062);
+}
+.verbal-container{
+    background-color: hsla(166, 100%, 37%, 0.062);
+}
+.visual-container{
+    background-color: hsla(234, 85%, 45%, 0.062);
+}
+/*contenedor  del titulo y el icono*/
+
+.reaction{
+    color: hsla(0, 100%, 67%);
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.memory{
+    color: hsla(39, 100%, 56%);
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.verbal{
+    color: hsla(166, 100%, 37%);
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.visual{
+    color: hsla(234, 85%, 45%);
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}  
+
+/*parte del titulo separacion del icono*/
+.title{
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+/*puntuacion fuerte*/
+.strong{
+    font-weight: 700;
+    font-size: 14px;
+}
+.cien_point{
+    color: hsla(0, 0%, 48%, 0.616);
+    font-weight: 500;
+}
+
+/*boton continue*/
+.btn_continue {
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    /* Transición en el estado base para un efecto suave al entrar y salir */
+    transition: all 1s ease; 
+}
+
+.btn_continue:hover {
+    /* Cambio de color a degradado */
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media screen and (min-width: 400px) {
+    .container{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+        max-width: 350px;
+        margin: auto;
+
+    }
+    .your_result{
+        width: 100%;
+        border-radius: 15px 15px 0 0 ;
+        padding: 30px 20px;
+        z-index: 3;
+    }
+    .summary{
+        width: 100%;
+        position: relative;
+        top: -10px;
+        border-radius: 15px;
+
+    }
+    
+}
+
+@media screen and (min-width: 800px) {
+    .container{
+        max-width: 500px;
+        margin: 100px auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-flow: row nowrap;
+        border-radius: 15px ;
+        background-color: hsl(0, 0%, 100%);
+    }
+    .your_result{
+        border-radius: 15px ;
+        width: 250px;
+        height: 100%;
+        padding: 40px 20px;
+        z-index: 3;
+    }
+    .your_result h4{
+        font-size: 16px;
+        position: relative;
+        top: -10px;
+    }
+    .summary{
+        width: 250px;
+        height: 100%;
+        border-radius:15px ;
+        padding: 0px 20px;
+    }    
+}
